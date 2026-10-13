@@ -9,7 +9,7 @@ function Resources() {
     const fetchResources = async () => {
       try {
         const response = await axios.get(
-          "http://127.0.0.1:5000/api/resources"
+          "http://carrer-path-d93u.onrender.com/api/resources"
         );
 
         setResources(response.data);

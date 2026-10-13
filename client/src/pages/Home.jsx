@@ -9,7 +9,7 @@ function Home() {
     const fetchCareers = async () => {
       try {
         const response = await axios.get(
-          "http://127.0.0.1:5000/api/careers"
+          "https://carrer-path-d93u.onrender.com/api/careers"
         );
 
         setCareers(

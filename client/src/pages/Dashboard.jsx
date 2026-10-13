@@ -21,22 +21,24 @@ function Dashboard() {
       try {
         const token = localStorage.getItem("token");
 
-        // Fetch careers
-        const careerResponse = await axios.get(
-          "http://127.0.0.1:5000/api/careers"
-        );
+      
+ // Fetch careers
+ const careerResponse = await axios.get(
+   "https://carrer-path-d93u.onrender.com/api/careers"
+ );
 
-        setCareers(careerResponse.data);
+ setCareers(careerResponse.data);
 
-        // Fetch user profile
-        const profileResponse = await axios.get(
-          "http://127.0.0.1:5000/api/auth/profile",
-          {
-            headers: {
-              Authorization: `Bearer ${token}`
-            }
-          }
-        );
+ // Fetch user profile
+ const profileResponse = await axios.get(
+   "https://carrer-path-d93u.onrender.com/api/auth/profile",
+   {
+     headers: {
+       Authorization: `Bearer ${token}`
+     }
+   }
+ );
+
 
         const userData = profileResponse.data.user;
 
@@ -83,7 +85,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        "http://127.0.0.1:5000/api/auth/select-career",
+       "https://carrer-path-d93u.onrender.com/api/auth/select-career",
         {
           careerId
         },
@@ -126,7 +128,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        "http://127.0.0.1:5000/api/auth/progress",
+        "https://carrer-path-d93u.onrender.com/api/auth/progress",
         {
           [field]: value
         },

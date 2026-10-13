@@ -11,14 +11,16 @@ function CompanyDetails() {
 
   useEffect(() => {
     const fetchCompanyDetails = async () => {
-      try {
-        const companyResponse = await axios.get(
-          `http://127.0.0.1:5000/api/companies/${id}`
-        );
+     
+try {
+  const companyResponse = await axios.get(
+    `https://carrer-path-d93u.onrender.com/api/companies/${id}`
+  );
 
-        const jobsResponse = await axios.get(
-          `http://127.0.0.1:5000/api/jobs?company=${id}`
-        );
+  const jobsResponse = await axios.get(
+    `https://carrer-path-d93u.onrender.com/api/jobs?company=${id}`
+  );
+
 
         setCompany(companyResponse.data);
         setJobs(

@@ -11,7 +11,7 @@ function Jobs() {
     const fetchJobs = async () => {
       try {
         const response = await axios.get(
-          "http://127.0.0.1:5000/api/jobs"
+          "https://carrer-path-d93u.onrender.com/api/jobs"
         );
 
         setJobs(

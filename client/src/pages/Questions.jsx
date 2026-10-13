@@ -13,7 +13,7 @@ function Questions() {
     const fetchQuestions = async () => {
       try {
         const response = await axios.get(
-          "http://127.0.0.1:5000/api/questions?limit=100"
+          "http://carrer-path-d93u.onrender.com/api/questions?limit=100"
         );
 
         setQuestions(response.data.questions);
@@ -61,7 +61,7 @@ function Questions() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        "http://127.0.0.1:5000/api/auth/progress",
+        "http://carrer-path-d93u.onrender.com/api/auth/progress",
         {
           interview: progress
         },

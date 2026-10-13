@@ -11,7 +11,7 @@ function Profile() {
         const token = localStorage.getItem("token");
 
         const response = await axios.get(
-          "http://127.0.0.1:5000/api/auth/profile",
+          "https://carrer-path-d93u.onrender.com/api/auth/profile",
           {
             headers: {
               Authorization: `Bearer ${token}`

@@ -10,7 +10,7 @@ function Skills() {
     const fetchSkills = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/skills"
+         "https://carrer-path-d93u.onrender.com/api/skills"
         );
 
         setSkills(response.data);

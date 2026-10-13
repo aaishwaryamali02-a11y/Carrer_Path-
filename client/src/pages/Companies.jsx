@@ -10,10 +10,9 @@ function Companies() {
   useEffect(() => {
     const fetchCompanies = async () => {
       try {
-        const response = await axios.get(
-          "http://127.0.0.1:5000/api/companies"
-        );
-
+       const response = await axios.get(
+  "https://carrer-path-d93u.onrender.com/api/companies"
+);
         setCompanies(
           Array.isArray(response.data)
             ? response.data

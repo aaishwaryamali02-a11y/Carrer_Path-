@@ -20,7 +20,7 @@ function Signup() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:5000/api/auth/register",
+        "http://carrer-path-d93u.onrender.com/api/auth/register",
         {
           name,
           email,
