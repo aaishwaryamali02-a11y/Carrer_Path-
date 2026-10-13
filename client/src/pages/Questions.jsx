@@ -13,7 +13,7 @@ function Questions() {
     const fetchQuestions = async () => {
       try {
         const response = await axios.get(
-          "http://carrer-path-d93u.onrender.com/api/questions?limit=100"
+          "https://carrer-path-d93u.onrender.com/api/questions?limit=100"
         );
 
         setQuestions(response.data.questions);
@@ -61,7 +61,7 @@ function Questions() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        "http://carrer-path-d93u.onrender.com/api/auth/progress",
+        "https://carrer-path-d93u.onrender.com/api/auth/progress",
         {
           interview: progress
         },

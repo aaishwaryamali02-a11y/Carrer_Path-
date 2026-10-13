@@ -10,7 +10,7 @@ function Projects() {
     const fetchProjects = async () => {
       try {
         const response = await axios.get(
-          "http://carrer-path-d93u.onrender.com/api/projects"
+          "https://carrer-path-d93u.onrender.com/api/projects"
         );
 
         setProjects(response.data);
