@@ -21,14 +21,14 @@ function CareerDetails() {
       try {
         // Fetch selected Career only
         const careerResponse = await axios.get(
-          `http://127.0.0.1:5000/api/careers/${id}`
+         `https://carrer-path-d93u.onrender.com/api/careers/${id}`
         );
 
         setCareer(careerResponse.data);
 
         // Fetch only questions for this Career
         const questionResponse = await axios.get(
-          `http://127.0.0.1:5000/api/questions?career=${id}&limit=100`
+          `https://carrer-path-d93u.onrender.com/api/questions?career=${id}&limit=100`
         );
 
         setQuestions(questionResponse.data.questions);
